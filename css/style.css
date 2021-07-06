@@ -2,7 +2,8 @@
 [TABLE OF CONTENTS]
 
 01. Base
-02. Header
+02. Header 
+03. Main Section
 
 */
 
@@ -16,9 +17,29 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif
+    font-family: 'Montserrat', sans-serif;
 }
 
+section {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.full-width-section {
+    width: 100%;
+}
+
+.button {
+    background-image: linear-gradient(90deg, #FBA24F 8%, #FF611E 145%);
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 25px;
+    box-shadow: 0px 2px 30px #fc8f4980;
+}
+
+.theme-typography {
+    color: #FBA24F;
+}
 /*=================================================================
                             Header                              
 =================================================================*/
@@ -32,7 +53,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 30px 60px;
 }
 
 .logo img {
@@ -52,6 +73,8 @@ nav {
     text-decoration: none;
     color: #575757;
     font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1.3px;
     padding-left: 50px;
     text-transform: capitalize;
     transition: 0.3s;
@@ -59,4 +82,51 @@ nav {
 
 .main-menu ul li a:hover {
     color: #FBA24F;
+}
+
+/*=================================================================
+                            Main Section                              
+=================================================================*/
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-section-content {
+    width: 50%;
+}
+
+.main-section-content h1 {
+    color: #575757;
+    font-size: 48px;
+    letter-spacing: 1.6px;
+    line-height: 64px;
+}
+
+.main-section-content p {
+    margin-top: 40px;
+    width: 450px;
+    color: #828282;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    line-height: 22px;
+}
+
+.main-section-content a {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+.main-section-img {
+    width: 50%;
+}
+
+.main-section-img img {
+    width: 100%;
+    height: auto;
 }
