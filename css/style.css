@@ -4,6 +4,7 @@
 01. Base
 02. Header 
 03. Main Section
+04. About Section
 
 */
 
@@ -25,12 +26,8 @@ section {
     margin: 0 auto;
 }
 
-.full-width-section {
-    width: 100%;
-}
-
 .button {
-    background-image: linear-gradient(90deg, #FBA24F 8%, #FF611E 145%);
+    background-image: linear-gradient(90deg, #FBA24F 8%, #FF1E1E 145%);
     color: #fff;
     padding: 15px 25px;
     border-radius: 25px;
@@ -41,7 +38,7 @@ section {
     color: #FBA24F;
 }
 /*=================================================================
-                            Header                              
+                            Header  Section                            
 =================================================================*/
 header {
     background-color: #FFF4ED;
@@ -110,7 +107,7 @@ nav {
     color: #828282;
     font-size: 16px;
     letter-spacing: 0.8px;
-    line-height: 22px;
+    line-height: 24px;
 }
 
 .main-section-content a {
@@ -129,4 +126,58 @@ nav {
 .main-section-img img {
     width: 100%;
     height: auto;
+}
+
+/*=================================================================
+                            About Section                              
+=================================================================*/ 
+.about-section {
+    background: url(../images/about-background.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.about-section-img {
+    width: 50%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+}
+
+.about-section-img img {
+    width: 280px;
+
+}
+
+.about-section-content {
+    width: 50%;
+    margin-left: 60px;
+}
+
+.about-section-content h2 {
+    color: #707070;
+    font-size: 36px;
+    letter-spacing: 1.2px;
+}
+
+.about-section-content p {
+    margin-top: 30px;
+    width: 450px;
+    color: #828282;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    line-height: 24px;
+}
+
+.about-section-content a {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
 }
