@@ -155,7 +155,7 @@ nav {
 
 .about-section-content {
     width: 50%;
-    margin-left: 60px;
+    padding-left: 60px;
 }
 
 .about-section-content h2 {
@@ -166,7 +166,7 @@ nav {
 
 .about-section-content p {
     margin-top: 30px;
-    width: 450px;
+    width: 500px;
     color: #828282;
     font-size: 16px;
     letter-spacing: 0.8px;
