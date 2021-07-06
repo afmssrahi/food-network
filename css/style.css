@@ -6,8 +6,9 @@
 03. Main Section
 04. About Section
 05. Recipies Section
-06. Contact Us Section 
-06. Footer
+06. Reviews Section
+07. Contact Us Section 
+08. Footer
 
 */
 
@@ -35,10 +36,17 @@ section {
     padding: 15px 25px;
     border-radius: 25px;
     box-shadow: 0px 2px 30px #fc8f4980;
+    transition: 0.3s;
+}
+
+.button:hover {
+    color: #FBA24F;
+    background: none;
+    box-shadow: 0px 2px 30px #ff6302;
 }
 
 .theme-typography {
-    color: #FBA24F;
+    color: #FF1E1E;
 }
 
 /*=================================================================
@@ -76,7 +84,7 @@ nav {
     font-weight: 500;
     font-size: 18px;
     letter-spacing: 1.3px;
-    padding-left: 50px;
+    padding-left: 40px;
     text-transform: capitalize;
     transition: 0.3s;
 }
@@ -252,6 +260,64 @@ nav {
 }
 
 /*=================================================================
+                            Reviews Section                                
+=================================================================*/
+
+.reviews-section {
+    margin-top: 60px;
+}
+
+.reviews-header {
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.reviews-header h2 {
+    color: #707070;
+    font-size: 36px;
+    letter-spacing: 1.2px;
+}
+
+
+.reviews-items {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews-single-item {
+    width: 33.33%;
+    height: auto;
+    background: #fbf7f4;
+    box-shadow: 0px 0px 40px #00000026;
+    border-radius: 120px;
+    padding: 20px 30px;
+    margin: 20px 40px;
+    text-align: center;
+}
+
+.reviews-single-item img {
+    width: 80px;
+    height: auto;
+}
+
+.reviews-single-item h4 {
+    margin-top: 20px;
+    color: #FC8F49;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.reviews-single-item p {
+    margin: 20px 0;
+    color: #5d5d5d;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+/*=================================================================
                             Contact Us Section                                
 =================================================================*/
 .contact-us-section {
@@ -274,12 +340,14 @@ nav {
     margin-bottom: 20px;
     padding: 25px 20px;
     border: 1px solid #FC8F49;
+    border-radius: 5px;
     background-color: #FFF9F6;
     color: #5d5d5d;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.7px;
     line-height: 24px;
+    transition: 0.3s;
 }
 
 .half-width-input {
@@ -297,13 +365,18 @@ nav {
 
 .contact-us-section form input:focus-visible,
 .contact-us-section form textarea:focus-visible {
-    outline: 2px solid #eb5c5c;
+    border: 1px solid #eb5c5c;
+    box-shadow: 0px 2px 10px #fc8f4980;
+    outline: none;
 }
 
 .contact-us-section form button {
     border: none;
     display: block;
     margin: 0 auto;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
 }
 
 /*=================================================================
