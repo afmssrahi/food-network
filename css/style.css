@@ -5,6 +5,9 @@
 02. Header 
 03. Main Section
 04. About Section
+05. Recipies Section
+06. Contact Us Section 
+06. Footer
 
 */
 
@@ -37,6 +40,7 @@ section {
 .theme-typography {
     color: #FBA24F;
 }
+
 /*=================================================================
                             Header  Section                            
 =================================================================*/
@@ -180,4 +184,155 @@ nav {
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.8px;
+}
+
+/*=================================================================
+                            Recipies Section                                
+=================================================================*/
+.recipies-section {
+    margin-top: 80px;
+}
+
+.recipies-header {
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.recipies-header h2 {
+    color: #707070;
+    font-size: 36px;
+    letter-spacing: 1.2px;
+}
+
+.recipies-header p {
+    margin-top: 30px;
+    color: #828282;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    line-height: 24px;
+}
+
+.recipies-items {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipies-single-item {
+    width: 33.33%;
+    height: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px #00000026;
+    border-radius: 30px;
+    padding: 20px 20px;
+    margin: 20px 20px;
+}
+
+.recipies-single-item img {
+    width: 100%;
+    height: auto;
+}
+
+.recipies-single-item h3 {
+    margin-top: 30px;
+    color: #474646;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.recipies-single-item p {
+    margin: 20px 0;
+    color: #5d5d5d;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    line-height: 24px;
+}
+
+/*=================================================================
+                            Contact Us Section                                
+=================================================================*/
+.contact-us-section {
+    margin-top: 60px;
+}
+
+.contact-us-section h2 {
+    color: #707070;
+    font-size: 36px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-us-section form input,
+.contact-us-section form textarea {
+    width: 98%;
+    height: 40px;
+    margin-left: 1%;
+    margin-bottom: 20px;
+    padding: 25px 20px;
+    border: 1px solid #FC8F49;
+    background-color: #FFF9F6;
+    color: #5d5d5d;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    line-height: 24px;
+}
+
+.half-width-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.half-width-input input {
+    margin: 0 1%;
+}
+
+.contact-us-section form textarea {
+    height: 130px;
+}
+
+.contact-us-section form input:focus-visible,
+.contact-us-section form textarea:focus-visible {
+    outline: 2px solid #eb5c5c;
+}
+
+.contact-us-section form button {
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+/*=================================================================
+                             Footer                                
+=================================================================*/
+
+footer {
+    margin-top: 80px;
+    width: 100%;
+    height: 180px;
+    background-color: #0B0D17;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.footer-logo img {
+    width: 260px;
+    height: auto;
+}
+
+footer p {
+    color: #d4d4d4;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    text-align: center;
 }
